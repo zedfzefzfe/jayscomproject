@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jayscom | Devis Gratuit Casablanca</title>
+    <meta name="description"
+        content="Contactez Jayscom pour un devis gratuit. Téléphone, WhatsApp ou email. Nous répondons rapidement à toutes vos demandes de signalétique.">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#1e293b', 900: '#0f172a' },
+                        teal: { 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488' },
+                        brand: { red: '#dc2626' }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-slate-600 bg-white">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent flex flex-col">
+        <div id="main-nav"
+            class="container mx-auto px-6 flex justify-between items-center text-navy-900 py-5 transition-all duration-300">
+            <a href="index.html" class="flex items-center gap-0 group logo-reveal-group">
+                <img src="assets/img/logo-icon.svg" alt="Jayscom Icon" class="h-16 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col logo-text">
+                    <span class="font-bold text-2xl tracking-tight leading-none text-navy-900 font-serif">JAYS
+                        COM</span>
+                    <span
+                        class="text-[0.65rem] uppercase tracking-[0.2em] text-teal-600 font-semibold leading-none mt-1">Solutions
+                        Visuelles</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium">
+                <a href="index.html" class="hover:text-teal-600 transition">Accueil</a>
+                <a href="portfolio.html" class="hover:text-teal-600 transition">Réalisations</a>
+                <a href="contact.html" class="text-teal-600">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-[#0d9488] rounded-lg hover:bg-teal-500 transition shadow-lg hover:shadow-teal-500/30">
+                    Demander un devis
+                </a>
+                <button id="menu-btn" class="lg:hidden text-2xl text-navy-900">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Sidebar -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-[60] transform translate-x-full lg:hidden flex flex-col p-6">
+        <div class="flex justify-between items-center mb-10">
+            <span class="font-bold text-xl text-navy-900">Menu</span>
+            <button id="close-menu-btn" class="text-2xl text-slate-400 hover:text-navy-900"><i
+                    class="ph ph-x"></i></button>
+        </div>
+        <nav class="flex flex-col gap-6 text-lg font-medium text-slate-700">
+            <a href="index.html" class="hover:text-teal-600">Accueil</a>
+            <a href="portfolio.html" class="hover:text-teal-600">Réalisations</a>
+            <a href="about.html" class="hover:text-teal-600">À propos</a>
+            <a href="contact.html" class="text-teal-600">Contact</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="contact.html"
+                class="flex items-center justify-center w-full px-6 py-3 text-white bg-navy-900 rounded-lg hover:bg-teal-600 transition">Demander
+                un devis</a>
+        </div>
+    </div>
+
+    <!-- Hero Section - Premium Enhanced -->
+    <section
+        class="relative min-h-[700px] lg:min-h-[850px] overflow-hidden bg-navy-900 text-white flex flex-col justify-center">
+        <!-- Layered Background System -->
+        <div class="absolute inset-0 z-0">
+            <!-- Base Image Layer -->
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat animate-subtle-zoom opacity-40 origin-center"
+                style="background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero2-8bdZiOBAn695451CkKPdqJFHkhYbP7.png');">
+            </div>
+
+            <!-- Mesh Gradient Overlay -->
+            <div class="absolute inset-0 opacity-90" style="background: radial-gradient(ellipse at 20% 30%, rgba(13,148,136,0.15) 0%, transparent 50%),
+                       radial-gradient(ellipse at 80% 70%, rgba(45,212,191,0.1) 0%, transparent 50%),
+                       linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);">
+            </div>
+
+            <!-- Subtle Grid Pattern -->
+            <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), 
+                       linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); 
+                       background-size: 100px 100px;">
+            </div>
+
+            <!-- Premium Gradient Vignette -->
+            <div class="absolute inset-0 bg-gradient-to-b from-navy-900/60 via-transparent to-navy-900"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-900/80 via-transparent to-navy-900/40"></div>
+        </div>
+
+        <!-- Floating Geometric Accents -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
+            <!-- Large Floating Circle -->
+            <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full border border-teal-500/10 float-slow"
+                style="animation-duration: 25s;"></div>
+
+            <!-- Medium Floating Square -->
+            <div class="absolute top-1/3 -left-16 w-64 h-64 rotate-45 border border-teal-400/5 float-medium"
+                style="animation-duration: 20s; animation-delay: 2s;"></div>
+
+            <!-- Small Floating Triangle Accent -->
+            <div class="absolute bottom-1/4 right-1/4 w-32 h-32 opacity-20 float-fast"
+                style="animation-duration: 15s; animation-delay: 1s;">
+                <svg viewBox="0 0 100 100" class="w-full h-full">
+                    <polygon points="50,15 90,85 10,85" fill="none" stroke="rgba(45,212,191,0.3)" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Floating Particles -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-[2]">
+            <div class="particle absolute top-[20%] left-[10%] w-1 h-1" style="animation-delay: 0s;"></div>
+            <div class="particle absolute top-[40%] left-[25%] w-1.5 h-1.5" style="animation-delay: 2s;"></div>
+            <div class="particle absolute top-[60%] left-[15%] w-1 h-1" style="animation-delay: 4s;"></div>
+            <div class="particle absolute top-[30%] right-[20%] w-1.5 h-1.5" style="animation-delay: 1s;"></div>
+            <div class="particle absolute top-[70%] right-[30%] w-1 h-1" style="animation-delay: 3s;"></div>
+            <div class="particle absolute top-[50%] right-[15%] w-1 h-1" style="animation-delay: 5s;"></div>
+            <div class="particle absolute top-[25%] left-[50%] w-1.5 h-1.5" style="animation-delay: 2.5s;"></div>
+            <div class="particle absolute top-[80%] left-[60%] w-1 h-1" style="animation-delay: 4.5s;"></div>
+        </div>
+
+        <!-- Premium Ambient Light Orbs -->
+        <div class="absolute inset-0 pointer-events-none z-[1]">
+            <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-[100px] float-slow"
+                style="animation-duration: 30s;"></div>
+            <div class="absolute bottom-1/3 right-1/3 w-[400px] h-[400px] bg-teal-400/5 rounded-full blur-[120px] float-medium"
+                style="animation-duration: 35s; animation-delay: 5s;"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="container mx-auto px-6 relative z-10 pt-40 pb-24">
+            <div class="max-w-4xl mx-auto text-center">
+
+                <!-- Premium Badge -->
+                <div class="mb-10 fade-in-up">
+                    <div
+                        class="inline-flex items-center gap-4 px-5 py-2 rounded-full border border-teal-500/20 bg-gradient-to-r from-teal-500/5 via-teal-500/10 to-teal-500/5 backdrop-blur-xl shadow-lg shadow-teal-500/5">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-400"></span>
+                        </span>
+                        <span
+                            class="text-teal-300 text-xs font-bold uppercase tracking-[0.25em] leading-none">Contactez-nous</span>
+                        <div class="w-16 h-[1px] bg-gradient-to-r from-teal-500/50 to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Main Headline with Premium Typography -->
+                <h1
+                    class="text-5xl lg:text-7xl font-black leading-[1.05] mb-8 fade-in-up reveal-delay-100 tracking-tight">
+                    <span class="block mb-3 text-white/90" style="letter-spacing: -0.02em;">Prêts à transformer</span>
+                    <span class="block relative">
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-teal-300 to-teal-400 drop-shadow-[0_0_30px_rgba(45,212,191,0.3)]"
+                            style="letter-spacing: -0.02em;">votre vision</span>
+                        <span class="text-teal-400">?</span>
+                        <!-- Subtle underline accent -->
+                        <div
+                            class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-32 h-[2px] bg-gradient-to-r from-transparent via-teal-500 to-transparent opacity-50">
+                        </div>
+                    </span>
+                </h1>
+
+                <!-- Refined Description -->
+                <p class="text-xl lg:text-2xl text-slate-300 font-light mb-12 max-w-3xl mx-auto leading-relaxed fade-in-up reveal-delay-200"
+                    style="letter-spacing: 0.01em;">
+                    Notre équipe est disponible <span class="text-teal-300 font-medium">24/7</span> pour répondre à vos
+                    questions<br class="hidden lg:block">
+                    et vous proposer un <span class="text-white font-medium">devis gratuit</span> sur mesure.
+                </p>
+
+                <!-- Premium CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center fade-in-up reveal-delay-300">
+                    <a href="#contact-form"
+                        class="group relative inline-flex items-center justify-center px-10 py-4 text-base font-bold text-navy-900 bg-gradient-to-r from-teal-300 to-teal-400 rounded-xl transition-all transform hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(45,212,191,0.6)] overflow-hidden">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-teal-200 to-teal-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <span class="relative flex items-center gap-2">
+                            Demander un devis
+                            <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </a>
+
+                    <a href="tel:0699355710"
+                        class="group inline-flex items-center justify-center px-10 py-4 text-base font-bold text-white border-2 border-white/10 hover:border-teal-400/30 hover:bg-white/5 rounded-xl transition-all backdrop-blur-sm">
+                        <i class="ph ph-phone mr-2 text-teal-400"></i>
+                        Appeler maintenant
+                    </a>
+                </div>
+
+                <!-- Subtle Trust Indicator -->
+                <div class="mt-12 fade-in-up reveal-delay-400">
+                    <div class="flex items-center justify-center gap-6 text-slate-400 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="ph-check-circle-fill text-teal-400"></i>
+                            <span>Réponse rapide</span>
+                        </div>
+                        <div class="w-1 h-1 rounded-full bg-slate-600"></div>
+                        <div class="flex items-center gap-2">
+                            <i class="ph-check-circle-fill text-teal-400"></i>
+                            <span>Devis gratuit</span>
+                        </div>
+                        <div class="w-1 h-1 rounded-full bg-slate-600"></div>
+                        <div class="flex items-center gap-2">
+                            <i class="ph-check-circle-fill text-teal-400"></i>
+                            <span>Sans engagement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced Stats Bar -->
+        <div
+            class="relative z-20 w-full border-t border-white/5 bg-gradient-to-b from-navy-900/90 to-navy-900/95 backdrop-blur-2xl">
+            <div class="container mx-auto px-6 py-8">
+                <div
+                    class="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-items-center lg:justify-items-start text-center lg:text-left">
+                    <div class="fade-in-up reveal-delay-500 group">
+                        <div class="flex flex-col lg:flex-row items-center gap-4">
+                            <div class="relative">
+                                <div
+                                    class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-300 to-teal-500">
+                                    24h</div>
+                                <div
+                                    class="absolute inset-0 blur-xl bg-teal-500/20 group-hover:bg-teal-500/30 transition-all">
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                                Délai de<br>Réponse</div>
+                        </div>
+                    </div>
+                    <div class="fade-in-up reveal-delay-600 group">
+                        <div class="flex flex-col lg:flex-row items-center gap-4">
+                            <div class="relative">
+                                <div
+                                    class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-300 to-teal-500">
+                                    100%</div>
+                                <div
+                                    class="absolute inset-0 blur-xl bg-teal-500/20 group-hover:bg-teal-500/30 transition-all">
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                                Devis<br>Gratuit</div>
+                        </div>
+                    </div>
+                    <div class="fade-in-up reveal-delay-700 group">
+                        <div class="flex flex-col lg:flex-row items-center gap-4">
+                            <div class="relative">
+                                <div
+                                    class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-300 to-teal-500">
+                                    7j/7</div>
+                                <div
+                                    class="absolute inset-0 blur-xl bg-teal-500/20 group-hover:bg-teal-500/30 transition-all">
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                                Disponibilité</div>
+                        </div>
+                    </div>
+                    <div class="fade-in-up reveal-delay-800 lg:ml-auto">
+                        <div class="flex flex-col lg:flex-row items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500/20 to-teal-600/10 border border-teal-500/20 flex items-center justify-center">
+                                <i class="ph-fill ph-phone text-teal-400 text-xl"></i>
+                            </div>
+                            <div class="text-sm text-slate-300 font-medium leading-tight">Réponse<br>instantanée</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-form" class="py-20 lg:py-32 relative overflow-hidden bg-navy-900">
+        <!-- Background effects -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full blur-[120px] opacity-20"
+            style="background: radial-gradient(ellipse, #0d9488 0%, transparent 70%);"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-7xl mx-auto">
+
+                <!-- Left: Contact Cards -->
+                <div class="space-y-6">
+                    <div class="mb-10 reveal reveal-up">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-[2px] bg-teal-500"></div>
+                            <span class="text-teal-400 font-bold tracking-[0.2em] uppercase text-xs">Nos
+                                Coordonnées</span>
+                        </div>
+                        <h2 class="text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">
+                            Comment nous<br>
+                            <span class="text-gradient-animated">contacter ?</span>
+                        </h2>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <a href="tel:0699355710"
+                        class="block p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-teal-500/30 backdrop-blur-sm transition-all duration-300 group reveal reveal-up delay-1 hover:transform hover:-translate-y-1">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center group-hover:bg-teal-500/20 transition-all glow-pulse">
+                                <i class="ph ph-phone text-2xl text-teal-400"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider mb-2">Téléphone</p>
+                                <p class="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors">
+                                    0699 35 57 10</p>
+                                <p class="text-sm text-slate-400 mt-1">Appelez-nous directement</p>
+                            </div>
+                            <i
+                                class="ph ph-arrow-right text-slate-600 group-hover:text-teal-400 group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                    </a>
+
+                    <!-- Email Card -->
+                    <a href="mailto:Jayscom22@gmail.com"
+                        class="block p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-teal-500/30 backdrop-blur-sm transition-all duration-300 group reveal reveal-up delay-2 hover:transform hover:-translate-y-1">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center group-hover:bg-teal-500/20 transition-all glow-pulse">
+                                <i class="ph ph-envelope-simple text-2xl text-teal-400"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider mb-2">Email</p>
+                                <p class="text-xl font-bold text-white group-hover:text-teal-400 transition-colors">
+                                    Jayscom22@gmail.com</p>
+                                <p class="text-sm text-slate-400 mt-1">Réponse sous 24h</p>
+                            </div>
+                            <i
+                                class="ph ph-arrow-right text-slate-600 group-hover:text-teal-400 group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Card -->
+                    <a href="https://wa.me/212699355710" target="_blank"
+                        class="block p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-green-500/30 backdrop-blur-sm transition-all duration-300 group reveal reveal-up delay-3 hover:transform hover:-translate-y-1">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center group-hover:bg-green-500/20 transition-all">
+                                <i class="ph ph-whatsapp-logo text-2xl text-green-400"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider mb-2">WhatsApp</p>
+                                <p class="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
+                                    Chat Direct</p>
+                                <p class="text-sm text-slate-400 mt-1">Réponse instantanée</p>
+                            </div>
+                            <i
+                                class="ph ph-arrow-right text-slate-600 group-hover:text-green-400 group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                    </a>
+
+                    <!-- Location Card -->
+                    <div
+                        class="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 backdrop-blur-sm reveal reveal-up delay-4">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+                                <i class="ph ph-map-pin text-2xl text-amber-400"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider mb-2">Adresse</p>
+                                <p class="text-xl font-bold text-white">Casablanca, Maroc</p>
+                                <p class="text-sm text-slate-400 mt-1">Intervention sur toute la région</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="reveal reveal-up delay-5">
+                    <div
+                        class="p-8 lg:p-10 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 backdrop-blur-md">
+                        <h3 class="text-2xl font-bold text-white mb-2">Envoyez-nous un message</h3>
+                        <p class="text-slate-400 mb-8">Remplissez le formulaire et nous vous répondrons
+                            rapidement.</p>
+
+                        <form action="https://formspree.io/f/xjgeyowr" method="POST" class="space-y-6">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="relative group">
+      <label class="block text-sm font-bold text-white/90 mb-2">Nom complet</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Votre nom"
+        required
+        class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-all text-white placeholder-slate-500">
+    </div>
+
+    <div class="relative group">
+      <label class="block text-sm font-bold text-white/90 mb-2">Téléphone</label>
+      <input
+        type="tel"
+        name="phone"
+        placeholder="06..."
+        class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-all text-white placeholder-slate-500">
+    </div>
+  </div>
+
+  <div class="relative group">
+    <label class="block text-sm font-bold text-white/90 mb-2">Email</label>
+    <input
+      type="email"
+      name="email"
+      placeholder="exemple@gmail.com"
+      required
+      class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-all text-white placeholder-slate-500">
+  </div>
+
+  <div class="relative group">
+    <label class="block text-sm font-bold text-white/90 mb-2">Service souhaité</label>
+    <select
+      name="service"
+      required
+      class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-all text-white">
+      <option value="" class="bg-navy-900">Sélectionnez un service</option>
+      <option value="enseignes" class="bg-navy-900">Enseignes Lumineuses</option>
+      <option value="lettrage" class="bg-navy-900">Lettrage 3D</option>
+      <option value="habillage" class="bg-navy-900">Habillage Façade</option>
+      <option value="impression" class="bg-navy-900">Impression Numérique</option>
+      <option value="autre" class="bg-navy-900">Autre</option>
+    </select>
+  </div>
+
+  <div class="relative group">
+    <label class="block text-sm font-bold text-white/90 mb-2">Message</label>
+    <textarea
+      name="message"
+      rows="4"
+      placeholder="Décrivez votre projet..."
+      required
+      class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-all text-white placeholder-slate-500 resize-none"></textarea>
+  </div>
+
+  <!-- redirect after submit -->
+  <input type="hidden" name="_redirect" value="thank-you.html">
+
+  <button type="submit"
+    class="w-full inline-flex items-center justify-center px-8 py-4 text-base font-bold text-navy-900 bg-teal-400 hover:bg-teal-300 rounded-xl transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(45,212,191,0.5)] group">
+    Envoyer ma demande
+    <i class="ph ph-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+  </button>
+</form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section - Premium Enhanced -->
+    <section class="relative h-[400px] lg:h-[450px] overflow-hidden">
+        <!-- Map Container -->
+        <div class="absolute inset-0 group">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.56000724838!2d-7.669875560410459!3d33.57240323277726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb11d21d002a55909!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+                width="100%" height="100%" style="border:0; filter: grayscale(100%) contrast(1.1) brightness(0.9);"
+                allowfullscreen="" loading="lazy" class="transition-all duration-700 group-hover:brightness-100">
+            </iframe>
+
+            <!-- Dark Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-navy-900/20 to-transparent pointer-events-none">
+            </div>
+
+            <!-- Top Border Accent -->
+            <div
+                class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent pointer-events-none">
+            </div>
+        </div>
+
+        <!-- Premium Location Card Overlay -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 w-full max-w-md px-6">
+            <div class="relative group/card">
+                <!-- Glow Effect -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-teal-600/20 rounded-2xl blur-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500">
+                </div>
+
+                <!-- Card -->
+                <div class="relative p-6 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl">
+                    <div class="flex items-start gap-5">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30">
+                                <i class="ph-fill ph-map-pin text-2xl text-white"></i>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-navy-900 mb-1">Casablanca, Maroc</h3>
+                            <p class="text-sm text-slate-600 mb-3">Intervention sur toute la région du Grand Casablanca
+                            </p>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <a href="https://maps.google.com/?q=Casablanca,Morocco" target="_blank"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-navy-900 text-white text-sm font-semibold rounded-lg hover:bg-teal-600 transition-all group/btn">
+                                    <i class="ph ph-navigation-arrow"></i>
+                                    Itinéraire
+                                    <i
+                                        class="ph ph-arrow-up-right text-xs group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+                                </a>
+                                <a href="tel:0699355710"
+                                    class="inline-flex items-center gap-2 px-4 py-2 border-2 border-navy-900 text-navy-900 text-sm font-semibold rounded-lg hover:bg-navy-900 hover:text-white transition-all">
+                                    <i class="ph ph-phone"></i>
+                                    Appeler
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corner Accents -->
+        <div class="absolute top-0 left-0 w-32 h-32 pointer-events-none">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-teal-500/30 to-transparent"></div>
+            <div class="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-b from-teal-500/30 to-transparent"></div>
+        </div>
+        <div class="absolute top-0 right-0 w-32 h-32 pointer-events-none">
+            <div class="absolute top-0 right-0 w-full h-[2px] bg-gradient-to-l from-teal-500/30 to-transparent"></div>
+            <div class="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-teal-500/30 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section - Premium Enhanced -->
+    <section class="py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-slate-50 relative overflow-hidden">
+        <!-- Sophisticated Background Effects -->
+        <div
+            class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-gradient-radial from-teal-500/8 to-transparent rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-teal-400/6 to-transparent rounded-full blur-3xl">
+        </div>
+
+        <!-- Decorative Grid Pattern -->
+        <div class="absolute inset-0 opacity-[0.015]"
+            style="background-image: radial-gradient(circle, #0d9488 1px, transparent 1px); background-size: 50px 50px;">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- Premium Section Header -->
+                <div class="text-center mb-14 reveal reveal-up">
+                    <!-- Decorative Top Line -->
+                    <div class="flex items-center justify-center gap-4 mb-8">
+                        <div class="h-[1px] w-12 bg-gradient-to-r from-transparent to-teal-500/40"></div>
+                        <div
+                            class="relative inline-flex items-center gap-4 px-6 py-2.5 rounded-full bg-gradient-to-r from-teal-500/10 via-white to-teal-500/10 border border-teal-500/20 shadow-lg shadow-teal-500/5">
+                            <div class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                            </div>
+                            <span class="text-teal-600 font-bold tracking-[0.3em] uppercase text-xs">Questions &
+                                Réponses</span>
+                            <div class="w-16 h-[1px] bg-gradient-to-r from-teal-500/60 via-teal-400/30 to-transparent">
+                            </div>
+                        </div>
+                        <div class="h-[1px] w-12 bg-gradient-to-l from-transparent to-teal-500/40"></div>
+                    </div>
+
+                    <h2 class="text-4xl lg:text-6xl font-black text-navy-900 leading-[1.1] mb-5 tracking-tight">
+                        <span class="relative inline-block">
+                            Questions
+                            <div
+                                class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-teal-500/30 to-transparent rounded-full">
+                            </div>
+                        </span>
+                        <br>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600">Fréquentes</span>
+                    </h2>
+                    <p class="text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto font-light">
+                        Tout ce que vous devez savoir pour <span class="text-teal-600 font-medium">démarrer
+                            sereinement</span>
+                    </p>
+                </div>
+
+                <!-- FAQ Items -->
+                <div class="space-y-6">
+
+                    <!-- FAQ Item 1 -->
+                    <details
+                        class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-1 overflow-hidden">
+                        <!-- Decorative Gradient Bar -->
+                        <div
+                            class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                        </div>
+
+                        <!-- Hover Glow Effect -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        </div>
+                        <summary
+                            class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                            <!-- Question Number Badge -->
+                            <div class="flex-shrink-0">
+                                <div class="relative">
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                        <span class="text-white font-black text-lg">01</span>
+                                    </div>
+                                    <!-- Icon Overlay -->
+                                    <div
+                                        class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                        <i class="ph-fill ph-clock text-teal-600 text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-1 pt-1">
+                                <h3
+                                    class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                    Quel est le délai de réponse ?
+                                </h3>
+                                <p class="text-sm text-slate-500 font-medium">Rapidité & Disponibilité</p>
+                            </div>
+
+                            <div class="flex-shrink-0 pt-2">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                    <i
+                                        class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                            <div class="pl-[68px] pr-4">
+                                <div
+                                    class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                    <p class="text-slate-700 leading-relaxed text-base">
+                                        Nous nous engageons à répondre à <strong class="text-teal-600 font-bold">toutes
+                                            les demandes sous 24h ouvrées</strong>.
+                                        Pour les demandes urgentes via WhatsApp, la réponse est <strong
+                                            class="text-navy-900">généralement instantanée</strong> pendant nos heures
+                                        d'ouverture.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 2 -->
+                    <details
+                        class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-2 overflow-hidden">
+                        <div
+                            class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        </div>
+
+                        <summary
+                            class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                            <div class="flex-shrink-0">
+                                <div class="relative">
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                        <span class="text-white font-black text-lg">02</span>
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                        <i class="ph-fill ph-check-circle text-teal-600 text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-1 pt-1">
+                                <h3
+                                    class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                    Le devis est-il vraiment gratuit ?
+                                </h3>
+                                <p class="text-sm text-slate-500 font-medium">Transparence & Sans Engagement</p>
+                            </div>
+
+                            <div class="flex-shrink-0 pt-2">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                    <i
+                                        class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                            <div class="pl-[68px] pr-4">
+                                <div
+                                    class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                    <p class="text-slate-700 leading-relaxed text-base">
+                                        Oui, absolument. Le devis est <strong class="text-teal-600 font-bold">100%
+                                            gratuit et sans engagement</strong>.
+                                        Le déplacement pour la prise de mesures est également <strong
+                                            class="text-navy-900">inclus à Casablanca</strong> et dans un rayon de 30km.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 3 -->
+                    <details
+                        class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-3 overflow-hidden">
+                        <div
+                            class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        </div>
+
+                        <summary
+                            class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                            <div class="flex-shrink-0">
+                                <div class="relative">
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                        <span class="text-white font-black text-lg">03</span>
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                        <i class="ph-fill ph-map-pin text-teal-600 text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-1 pt-1">
+                                <h3
+                                    class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                    Quelles zones couvrez-vous ?
+                                </h3>
+                                <p class="text-sm text-slate-500 font-medium">Couverture & Déplacements</p>
+                            </div>
+
+                            <div class="flex-shrink-0 pt-2">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                    <i
+                                        class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                            <div class="pl-[68px] pr-4">
+                                <div
+                                    class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                    <p class="text-slate-700 leading-relaxed text-base">
+                                        Nous intervenons principalement sur <strong
+                                            class="text-teal-600 font-bold">Casablanca et toute la région du Grand
+                                            Casablanca</strong>.
+                                        Pour les projets d'envergure, nous pouvons nous déplacer <strong
+                                            class="text-navy-900">partout au Maroc</strong>. N'hésitez pas à nous
+                                        consulter.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 4 -->
+                    <details
+                        class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadowlg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-4 overflow-hidden">
+                        <div
+                            class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        </div>
+
+                        <summary
+                            class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                            <div class="flex-shrink-0">
+                                <div class="relative">
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                        <span class="text-white font-black text-lg">04</span>
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                        <i class="ph-fill ph-wrench text-teal-600 text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-1 pt-1">
+                                <h3
+                                    class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                    Proposez-vous un service d'installation ?
+                                </h3>
+                                <p class="text-sm text-slate-500 font-medium">Service Complet & Professionnel</p>
+                            </div>
+
+                            <div class="flex-shrink-0 pt-2">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                    <i
+                                        class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                            <div class="pl-[68px] pr-4">
+                                <div
+                                    class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                    <p class="text-slate-700 leading-relaxed text-base">
+                                        Oui, nous proposons un <strong class="text-teal-600 font-bold">service complet
+                                            clé en main</strong> : conception, fabrication ET installation
+                                        par nos <strong class="text-navy-900">équipes professionnelles
+                                            certifiées</strong>. Tout est pris en charge de A à Z pour votre
+                                        tranquillité.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
+
+                <!-- Premium CTA -->
+                <div class="mt-14 text-center reveal reveal-up delay-5">
+                    <div
+                        class="inline-block p-8 rounded-3xl bg-gradient-to-br from-navy-900 to-navy-800 shadow-2xl shadow-navy-900/30 border border-white/5">
+                        <p class="text-slate-300 mb-6 text-lg">Vous avez une autre question ?</p>
+                        <a href="#contact-form"
+                            class="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-teal-400 to-teal-500 text-navy-900 font-black text-lg rounded-2xl hover:from-teal-300 hover:to-teal-400 transition-all transform hover:-translate-y-1 shadow-xl shadow-teal-500/30 hover:shadow-2xl hover:shadow-teal-400/40">
+                            <i class="ph-fill ph-chat-circle-dots text-xl"></i>
+                            Contactez-nous maintenant
+                            <i
+                                class="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="assets/img/logo-icon.svg" alt="Jayscom" class="h-12 w-auto brightness-0 invert">
+                        <div class="flex flex-col">
+                            <span class="font-bold text-xl text-white">JAYS COM</span>
+                            <span class="text-xs text-teal-400 uppercase tracking-wider">Solutions Visuelles</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Votre partenaire de confiance pour la conception et l'installation d'enseignes lumineuses et
+                        signalétique 3D au Maroc.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal-500 hover:border-teal-500 transition-all social-icon">
+                            <i class="ph ph-facebook-logo"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal-500 hover:border-teal-500 transition-all social-icon">
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal-500 hover:border-teal-500 transition-all social-icon">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-slate-400 hover:text-teal-400 transition footer-link">Accueil</a></li>
+                        <li><a href="services.html"
+                                class="text-slate-400 hover:text-teal-400 transition footer-link">Services</a></li>
+                        <li><a href="portfolio.html"
+                                class="text-slate-400 hover:text-teal-400 transition footer-link">Réalisations</a></li>
+                        <li><a href="contact.html"
+                                class="text-slate-400 hover:text-teal-400 transition footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center gap-2">
+                            <i class="ph ph-phone text-teal-400"></i>
+                            0699 35 57 10
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="ph ph-envelope text-teal-400"></i>
+                            Jayscom22@gmail.com
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="ph ph-map-pin text-teal-400"></i>
+                            Casablanca, Maroc
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2024 Jayscom. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

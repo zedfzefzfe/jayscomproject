@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayscom - Publicite & Signaletique Casablanca</title>
+    <meta name="description"
+        content="Jayscom offre des solutions de conception, fabrication et installation d'enseignes, signaletique et habillage de facade a Casablanca. Devis gratuit.">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#1e293b', 900: '#0f172a' },
+                        teal: { 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488' },
+                        brand: { red: '#dc2626' }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-slate-600 bg-white">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent flex flex-col">
+        <div id="main-nav"
+            class="container mx-auto px-6 flex justify-between items-center text-navy-900 py-5 transition-all duration-300">
+            <a href="index.html" class="flex items-center gap-0 group logo-reveal-group">
+                <img src="assets/img/logo-icon.svg" alt="Jayscom Icon" class="h-16 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col logo-text">
+                    <span class="font-bold text-2xl tracking-tight leading-none text-navy-900 font-serif">JAYS
+                        COM</span>
+                    <span
+                        class="text-[0.65rem] uppercase tracking-[0.2em] text-teal-600 font-semibold leading-none mt-1">Solutions
+                        Visuelles</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium">
+                <a href="index.html" class="text-teal-400">Accueil</a>
+                <a href="portfolio.html" class="text-white hover:text-teal-400 transition">R&eacute;alisations</a>
+                <a href="contact.html" class="text-white hover:text-teal-400 transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-[#0d9488] rounded-lg hover:bg-teal-500 transition shadow-lg hover:shadow-teal-500/30">
+                    Demander un devis
+                </a>
+                <button id="menu-btn" class="lg:hidden text-2xl text-navy-900">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Sidebar -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-[60] transform translate-x-full lg:hidden flex flex-col p-6">
+        <div class="flex justify-between items-center mb-10">
+            <span class="font-bold text-xl text-navy-900">Menu</span>
+            <button id="close-menu-btn" class="text-2xl text-slate-400 hover:text-navy-900"><i
+                    class="ph ph-x"></i></button>
+        </div>
+        <nav class="flex flex-col gap-6 text-lg font-medium text-slate-700">
+            <a href="index.html" class="text-teal-600">Accueil</a>
+            <a href="services.html" class="hover:text-teal-600">Services</a>
+            <a href="portfolio.html" class="hover:text-teal-600">R&eacute;alisations</a>
+            <a href="about.html" class="hover:text-teal-600">&Agrave; propos</a>
+            <a href="contact.html" class="hover:text-teal-600">Contact</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="contact.html"
+                class="flex items-center justify-center w-full px-6 py-3 text-white bg-navy-900 rounded-lg hover:bg-teal-600 transition">Demander
+                un devis</a>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION (UNTOUCHED) ===== -->
+    <section
+        class="relative h-[100svh] lg:h-screen min-h-[700px] lg:min-h-[900px] overflow-hidden bg-navy-900 text-white flex flex-col justify-center">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center hero-bg bg-no-repeat animate-subtle-zoom opacity-100 origin-center"
+                style="background-image: url('assets/img/ChatGPT Image 15 févr. 2026, 14_39_14.png');">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/70 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-navy-900 to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 pt-24 lg:pt-20 flex-grow flex items-center">
+            <div class="max-w-4xl">
+                <div
+                    class="mb-8 fade-in-up">
+                   
+                </div>
+
+                <h1
+                    class="text-5xl lg:text-7xl font-bold leading-[1.1] mb-6 fade-in-up reveal-delay-100 drop-shadow-lg">
+                    Donnez vie &agrave; votre <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400">Identit&eacute;
+                        de Marque.</span>
+                </h1>
+
+                <p
+                    class="text-xl text-slate-300 font-light mb-10 max-w-2xl leading-relaxed fade-in-up reveal-delay-200 border-l-4 border-teal-500 pl-6">
+                    Solutions d’impression et signalétique professionnelle haut de gamme.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-5 fade-in-up reveal-delay-300">
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-navy-900 bg-teal-400 hover:bg-teal-300 rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(45,212,191,0.5)]">
+                        Demander un devis gratuit
+                    </a>
+                    <a href="portfolio.html"
+                        class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white border border-white/20 hover:bg-white/10 rounded-lg transition-all backdrop-blur-sm">
+                        <i class="ph-images mr-2"></i> Voir notre galerie
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:block relative z-20 w-full border-t border-white/10 bg-navy-900/80 backdrop-blur-lg">
+            <div class="container mx-auto px-6 py-6">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center md:justify-items-start text-center md:text-left">
+                    <div class="flex items-center gap-4 fade-in-up reveal-delay-400">
+                        <div class="text-3xl font-bold text-teal-400">100+</div>
+                        <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                            Projets<br>R&eacute;alis&eacute;s</div>
+                    </div>
+                    <div class="flex items-center gap-4 fade-in-up reveal-delay-500">
+                        <div class="text-3xl font-bold text-teal-400">100%</div>
+                        <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                            Satisfaction<br>Client</div>
+                    </div>
+                    <div class="flex items-center gap-4 fade-in-up reveal-delay-600">
+                        <div class="text-3xl font-bold text-teal-400">24/7</div>
+                        <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                            Support<br>Technique</div>
+                    </div>
+                    <div class="flex items-center gap-4 fade-in-up reveal-delay-700 md:ml-auto">
+                        <div class="text-3xl font-bold text-teal-400">70+</div>
+                        <div class="text-sm text-slate-300 font-medium">Recommand&eacute; par les<br>professionnels
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile stats duplicate for screens smaller than md -->
+    <div class="md:hidden relative z-20 w-full border-t border-white/10 bg-navy-900/80 backdrop-blur-lg">
+        <div class="container mx-auto px-6 py-6">
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center md:justify-items-start text-center md:text-left">
+                <div class="flex items-center gap-4 fade-in-up reveal-delay-400">
+                    <div class="text-3xl font-bold text-teal-400">100+</div>
+                    <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                        Projets<br>R&eacute;alis&eacute;s</div>
+                </div>
+                <div class="flex items-center gap-4 fade-in-up reveal-delay-500">
+                    <div class="text-3xl font-bold text-teal-400">100%</div>
+                    <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                        Satisfaction<br>Client</div>
+                </div>
+                <div class="flex items-center gap-4 fade-in-up reveal-delay-600">
+                    <div class="text-3xl font-bold text-teal-400">24/7</div>
+                    <div class="text-sm text-slate-400 leading-tight uppercase tracking-wider font-semibold">
+                        Support<br>Technique</div>
+                </div>
+                <div class="flex items-center gap-4 fade-in-up reveal-delay-700 md:ml-auto">
+                    <div class="text-3xl font-bold text-teal-400">70+</div>
+                    <div class="text-sm text-slate-300 font-medium">Recommand&eacute; par les<br>professionnels
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PROCESS STEPS (NEW - Premium) ===== -->
+    <section class="relative bg-navy-900 py-20 overflow-hidden">
+        <!-- Background decorations -->
+        <div class="absolute top-10 left-10 w-72 h-72 bg-teal-500/5 rounded-full blur-3xl float-slow"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl float-medium"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
+                <!-- Connecting Line -->
+                <div
+                    class="hidden md:block absolute top-[3.5rem] left-[16.67%] right-[16.67%] h-[2px] bg-slate-700/50 z-0">
+                    <div class="process-line h-full bg-gradient-to-r from-teal-500 via-teal-400 to-teal-500 reveal">
+                    </div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="text-center relative z-10 reveal reveal-up delay-0">
+                    <div
+                        class="w-28 h-28 mx-auto rounded-2xl bg-gradient-to-br from-teal-500/20 to-teal-600/10 border border-teal-500/20 flex items-center justify-center mb-6 step-icon-animated glow-pulse">
+                        <i class="ph ph-pencil-ruler text-5xl text-teal-400"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Conception</h3>
+                    <p class="text-slate-400 text-sm max-w-xs mx-auto leading-relaxed">Design 3D et maquettes
+                        r&eacute;alistes avant validation de votre projet.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center relative z-10 reveal reveal-up delay-2">
+                    <div class="w-28 h-28 mx-auto rounded-2xl bg-gradient-to-br from-teal-500/20 to-teal-600/10 border border-teal-500/20 flex items-center justify-center mb-6 step-icon-animated glow-pulse"
+                        style="animation-delay: 1s;">
+                        <i class="ph ph-factory text-5xl text-teal-400"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Fabrication</h3>
+                    <p class="text-slate-400 text-sm max-w-xs mx-auto leading-relaxed">Atelier &eacute;quip&eacute; pour
+                        une d&eacute;coupe pr&eacute;cise et une finition durable.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center relative z-10 reveal reveal-up delay-4">
+                    <div class="w-28 h-28 mx-auto rounded-2xl bg-gradient-to-br from-teal-500/20 to-teal-600/10 border border-teal-500/20 flex items-center justify-center mb-6 step-icon-animated glow-pulse"
+                        style="animation-delay: 2s;">
+                        <i class="ph ph-wrench text-5xl text-teal-400"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Installation</h3>
+                    <p class="text-slate-400 text-sm max-w-xs mx-auto leading-relaxed">Pose professionnelle sur
+                        Casablanca et ses environs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE STRIP ===== -->
+    <section class="bg-teal-600 py-4 overflow-hidden">
+        <div class="marquee-track">
+            <div
+                class="flex items-center gap-12 px-6 text-white font-bold text-sm uppercase tracking-widest whitespace-nowrap">
+                <span class="flex items-center gap-3"><i class="ph ph-lightbulb text-lg"></i> Enseignes
+                    Lumineuses</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-cube text-lg"></i> Lettrage 3D</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-buildings text-lg"></i> Habillage
+                    Fa&ccedil;ade</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-printer text-lg"></i> Impression
+                    Num&eacute;rique</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-lightning text-lg"></i> Neon Flex</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-signpost text-lg"></i> Totem &amp;
+                    Signal&eacute;tique</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-car text-lg"></i> Habillage V&eacute;hicule</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div
+                class="flex items-center gap-12 px-6 text-white font-bold text-sm uppercase tracking-widest whitespace-nowrap">
+                <span class="flex items-center gap-3"><i class="ph ph-lightbulb text-lg"></i> Enseignes
+                    Lumineuses</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-cube text-lg"></i> Lettrage 3D</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-buildings text-lg"></i> Habillage
+                    Fa&ccedil;ade</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-printer text-lg"></i> Impression
+                    Num&eacute;rique</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-lightning text-lg"></i> Neon Flex</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-signpost text-lg"></i> Totem &amp;
+                    Signal&eacute;tique</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+                <span class="flex items-center gap-3"><i class="ph ph-car text-lg"></i> Habillage V&eacute;hicule</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION (PREMIUM CARDS) ===== -->
+    <section id="services" class="py-20 sm:py-24 md:py-32 relative overflow-hidden" style="background: #0a0f1e;">
+        <!-- Subtle ambient glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-[120px] opacity-15"
+            style="background: radial-gradient(ellipse, #0d9488 0%, transparent 70%);"></div>
+        <div class="absolute bottom-20 right-0 w-[300px] h-[300px] rounded-full blur-[100px] opacity-5"
+            style="background: #8b5cf6;"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-14 sm:mb-20">
+                <div class="reveal reveal-up flex items-center justify-center gap-3 mb-5">
+                    <div class="w-8 sm:w-10 h-[2px] bg-teal-500"></div>
+                    <span class="text-teal-400 font-bold tracking-[0.25em] uppercase text-[10px] sm:text-xs">Nos
+                        Expertises</span>
+                    <div class="w-8 sm:w-10 h-[2px] bg-teal-500"></div>
+                </div>
+                <h2
+                    class="reveal reveal-up delay-1 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight mb-5">
+                    Nos Services
+                </h2>
+                <p
+                    class="reveal reveal-up delay-2 text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    Une gamme compl&egrave;te de solutions visuelles pour donner vie &agrave; votre identit&eacute; de
+                    marque.
+                </p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8" id="services-grid">
+
+                <!-- Card 1: Enseignes Lumineuses -->
+                <a href="service-detail.html?id=enseignes-lumineuses" class="service-card group service-card-stagger"
+                    data-index="0">
+                    <div class="service-card-img">
+                        <img src="assets/img/ChatGPT Image 10 févr. 2026, 18_55_45.png"
+                            alt="Enseignes Lumineuses" loading="lazy" />
+                    </div>
+                    <div class="service-card-body">
+                        <h3
+                            class="text-xl font-bold text-white mb-2 group-hover:text-teal-300 transition-colors duration-300">
+                            Habillage Voiture</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+                            Solutions sur mesure pour transformer vos véhicules en outils de communication performants.
+                        </p>
+                        <span class="service-card-cta text-teal-400">
+                            D&eacute;couvrir <i class="ph ph-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Card 2: Lettrage 3D -->
+                <a href="service-detail.html?id=lettrage-3d" class="service-card group service-card-stagger"
+                    data-index="1">
+                    <div class="service-card-img">
+                        <img src="assets/img/ChatGPT Image 10 févr. 2026, 19_01_10.png"
+                            alt="Lettrage 3D" loading="lazy" />
+                    </div>
+                    <div class="service-card-body">
+                        <h3
+                            class="text-xl font-bold text-white mb-2 group-hover:text-teal-300 transition-colors duration-300">
+                            INDUSTRIE PUBLICITAIRE</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+                            Solutions complètes de fabrication publicitaire : conception, production et installation sur
+                            mesure pour valoriser votre marque.
+                        </p>
+                        <span class="service-card-cta text-teal-400">
+                            Explorer <i class="ph ph-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Card 3: Habillage Façade -->
+                <a href="service-detail.html?id=habillage-facade" class="service-card group service-card-stagger"
+                    data-index="2">
+                    <div class="service-card-img">
+                        <img src="assets/img/ChatGPT Image 11 févr. 2026, 15_14_58.png"
+                            alt="Habillage Façade" loading="lazy" />
+                    </div>
+                    <div class="service-card-body">
+                        <h3
+                            class="text-xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors duration-300">
+                            Événementiel</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+                            Solutions événementielles complètes pour promouvoir votre marque avec impact et
+                            professionnalisme.
+                        </p>
+                        <span class="service-card-cta text-amber-400">
+                            Explorer <i class="ph ph-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Card 4: Impression Numérique -->
+                <a href="service-detail.html?id=impression-numerique" class="service-card group service-card-stagger"
+                    data-index="3">
+                    <div class="service-card-img">
+                        <img src="assets/img/ChatGPT Image 11 févr. 2026, 15_36_05.png"
+                            alt="Impression Numérique" loading="lazy" /> <span class="service-card-number">04</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3
+                            class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">
+                            Impression Num&eacute;rique</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+                            Vinyle, b&acirc;ches et stickers grand format HD. Impressions durables pour toute
+                            communication visuelle.
+                        </p>
+                        <span class="service-card-cta text-cyan-400">
+                            Explorer <i class="ph ph-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Card 5: Neon Flex -->
+                <a href="service-detail.html?id=neon-flex" class="service-card group service-card-stagger"
+                    data-index="4">
+                    <div class="service-card-img">
+                        <img src="assets/img/ChatGPT Image 11 févr. 2026, 15_45_22.png"
+                            alt="Neon Flex" loading="lazy" />
+                    </div>
+                    <div class="service-card-body">
+                        <h3
+                            class="text-xl font-bold text-white mb-2 group-hover:text-pink-300 transition-colors duration-300">
+                            Habillage de Façade</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+                            Modernisez votre façade avec un habillage sur mesure alliant design, qualité et durabilité.
+                        </p>
+                        <span class="service-card-cta text-pink-400">
+                            Explorer <i class="ph ph-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Card 6: Totem & Signalétique -->
+                <a href="service-detail.html?id=totem-signaletique" class="service-card group service-card-stagger"
+                    data-index="5">
+                    <div class="service-card-img">
+                        <img src="assets/img/ChatGPT Image 11 févr. 2026, 15_41_12.png"
+                            alt="Totem & Signalétique" loading="lazy" />
+                    </div>
+                    <div class="service-card-body">
+                        <h3
+                            class="text-xl font-bold text-white mb-2 group-hover:text-violet-300 transition-colors duration-300">
+                            Lettrage 3D & Logos Illuminés</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">
+                            Lettres 3D et logos lumineux personnalisés pour une visibilité premium et un impact maximal.
+                        </p>
+                        <span class="service-card-cta text-violet-400">
+                            Explorer <i class="ph ph-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="text-center mt-14 reveal reveal-up delay-3">
+                <a href="portfolio.html"
+                    class="group inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-teal-500 hover:bg-teal-400 text-navy-900 font-bold text-sm transition-all duration-300 shadow-lg shadow-teal-500/20 hover:shadow-teal-400/30 hover:-translate-y-0.5">
+                    Voir tous nos projets
+                    <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION (NEW) ===== -->
+    <section class="py-20 bg-slate-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03]"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23000000&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="stat-card bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-500 reveal reveal-up delay-0">
+                    <div class="text-5xl font-extrabold text-navy-900 mb-2">
+                        <span data-count="100" data-suffix="+">0</span>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm uppercase tracking-wider">Projets
+                        R&eacute;alis&eacute;s</p>
+                </div>
+                <div
+                    class="stat-card bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-500 reveal reveal-up delay-1">
+                    <div class="text-5xl font-extrabold text-navy-900 mb-2">
+                        <span data-count="100" data-suffix="%">0</span>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm uppercase tracking-wider">Satisfaction Client</p>
+                </div>
+                <div
+                    class="stat-card bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-500 reveal reveal-up delay-2">
+                    <div class="text-5xl font-extrabold text-navy-900 mb-2">
+                        <span data-count="15" data-suffix=" ans">0</span>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm uppercase tracking-wider">D'exp&eacute;rience</p>
+                </div>
+                <div
+                    class="stat-card bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-500 reveal reveal-up delay-3">
+                    <div class="text-5xl font-extrabold text-navy-900 mb-2">
+                        <span data-count="50" data-suffix="+">0</span>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm uppercase tracking-wider">Clients Fid&egrave;les</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY US (ENHANCED) ===== -->
+    <section class="py-24 bg-slate-900 relative overflow-hidden">
+        <!-- Ambient light effects -->
+        <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image Side -->
+                <div class="lg:w-1/2 reveal reveal-left">
+                    <div class="relative">
+                        <!-- Decorative frame -->
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-br from-teal-500/20 to-transparent rounded-3xl blur-sm">
+                        </div>
+                        <div class="parallax-container rounded-2xl overflow-hidden image-frame relative">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atelier-LoS1lD9ap5kWENkt9LDejl9h4evBCL.png"
+                                alt="Atelier Jayscom - Fabrication d'enseignes"
+                                class="parallax-img w-full h-auto object-cover" style="transform: scale(1.15);">
+                        </div>
+                        <!-- Floating badge -->
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-teal-500 text-white rounded-2xl p-5 shadow-xl shadow-teal-500/30 float-fast z-20">
+                            <div class="text-3xl font-extrabold leading-none">100%</div>
+                            <div class="text-xs font-bold uppercase tracking-wider mt-1 text-teal-100">Sur mesure</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="lg:w-1/2 text-white">
+                    <span
+                        class="reveal reveal-up text-teal-400 font-bold tracking-wider uppercase text-sm mb-3 inline-block">Pourquoi
+                        Nous Choisir</span>
+                    <h2 class="reveal reveal-up delay-1 text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                        L'expertise technique au service de votre image</h2>
+                    <div class="section-divider reveal reveal-scale delay-2 mb-8 !mx-0"></div>
+                    <p class="reveal reveal-up delay-2 text-slate-400 mb-10 leading-relaxed text-lg">
+                        Chez Jayscom, nous ne faisons pas que fabriquer des enseignes. Nous cr&eacute;ons des
+                        identit&eacute;s visuelles durables qui attirent vos clients. De la mod&eacute;lisation &agrave;
+                        la pose, tout est g&eacute;r&eacute; en interne.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5 reveal reveal-up delay-3">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center flex-shrink-0 text-teal-400">
+                                <i class="ph ph-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Respect des d&eacute;lais</h4>
+                                <p class="text-slate-400 leading-relaxed">Nous savons que l'ouverture de votre commerce
+                                    ne peut pas attendre. Nous livrons &agrave; temps, toujours.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5 reveal reveal-up delay-4">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center flex-shrink-0 text-teal-400">
+                                <i class="ph ph-shield-check text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Qualit&eacute; Durable</h4>
+                                <p class="text-slate-400 leading-relaxed">Mat&eacute;riaux r&eacute;sistants aux
+                                    intemp&eacute;ries (LEDs &eacute;tanches, Alucobond certifi&eacute;, Inox 316).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5 reveal reveal-up delay-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center flex-shrink-0 text-teal-400">
+                                <i class="ph ph-headset text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Conseil Personnalis&eacute;</h4>
+                                <p class="text-slate-400 leading-relaxed">Une &eacute;quipe &agrave; l'&eacute;coute
+                                    pour vous guider vers la meilleure solution technique et budg&eacute;taire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM / ABOUT STRIP (NEW) ===== -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                <!-- Image -->
+                <div class="lg:w-1/2 reveal reveal-right">
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-bl from-navy-900/10 to-transparent rounded-3xl blur-sm">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 relative">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/equipe-rdWSPfk1e0oIDSekVw8LyG5RqMrFJV.png"
+                                alt="L'equipe Jayscom sur le terrain" class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Floating badge -->
+                        <div
+                            class="absolute -bottom-6 -left-6 bg-navy-900 text-white rounded-2xl p-5 shadow-xl float-medium z-20">
+                            <div class="text-3xl font-extrabold leading-none text-teal-400">15+</div>
+                            <div class="text-xs font-bold uppercase tracking-wider mt-1 text-slate-300">Ann&eacute;es
+                                d'exp&eacute;rience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:w-1/2">
+                    <span
+                        class="reveal reveal-up text-teal-600 font-bold tracking-wider uppercase text-sm mb-3 inline-block">Notre
+                        &Eacute;quipe</span>
+                    <h2
+                        class="reveal reveal-up delay-1 text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-3 leading-tight">
+                        Des professionnels passionn&eacute;s</h2>
+                    <div class="section-divider reveal reveal-scale delay-2 mb-8 !mx-0"></div>
+                    <p class="reveal reveal-up delay-2 text-slate-500 mb-8 leading-relaxed text-lg">
+                        Notre &eacute;quipe combine savoir-faire artisanal et technologies de pointe pour cr&eacute;er
+                        des enseignes qui se d&eacute;marquent. Chaque projet est trait&eacute; avec une attention
+                        m&eacute;ticuleuse aux d&eacute;tails.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 reveal reveal-up delay-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                                <i class="ph ph-check-circle text-xl"></i>
+                            </div>
+                            <span class="text-navy-900 font-semibold text-sm">Atelier int&eacute;gr&eacute;</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                                <i class="ph ph-check-circle text-xl"></i>
+                            </div>
+                            <span class="text-navy-900 font-semibold text-sm">D&eacute;coupe CNC</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                                <i class="ph ph-check-circle text-xl"></i>
+                            </div>
+                            <span class="text-navy-900 font-semibold text-sm">&Eacute;quipe certifi&eacute;e</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                                <i class="ph ph-check-circle text-xl"></i>
+                            </div>
+                            <span class="text-navy-900 font-semibold text-sm">Mat&eacute;riaux premium</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 reveal reveal-up delay-4">
+                        <a href="about.html"
+                            class="magnetic-btn inline-flex items-center justify-center px-8 py-4 bg-navy-900 text-white font-bold rounded-xl hover:bg-teal-600 transition-all duration-300 shadow-lg hover:shadow-teal-500/30">
+                            En savoir plus sur nous <i class="ph ph-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO PREVIEW (ENHANCED) ===== -->
+    <section class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <span class="reveal reveal-up text-teal-600 font-bold tracking-wider uppercase text-sm block">Nos
+                        R&eacute;alisations</span>
+                    <h2 class="reveal reveal-up delay-1 text-4xl md:text-5xl font-bold text-navy-900 mt-3">
+                        Derniers <span class="text-gradient-animated">Projets</span>
+                    </h2>
+                    <div class="section-divider reveal reveal-scale delay-2 mt-4 !mx-0"></div>
+                </div>
+                <a href="portfolio.html"
+                    class="reveal reveal-up delay-2 hidden md:flex items-center gap-2 text-navy-900 font-bold text-base hover:text-teal-600 transition group mt-4 md:mt-0">
+                    Voir tout le portfolio
+                    <i class="ph ph-arrow-right transition-transform group-hover:translate-x-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Portfolio Card 1 -->
+                <div
+                    class="portfolio-card group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/5] cursor-pointer reveal reveal-up delay-0">
+                    <img src="assets/img/WhatsApp Image 2026-02-04 at 21.18.43 (4).jpeg"
+                        alt="Pharmacie Centrale - Enseigne LED" class="portfolio-img w-full h-full object-cover">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/60 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-teal-400 text-xs font-bold uppercase tracking-wider mb-2">Enseigne
+                            Lumineuse</span>
+                        <h3 class="text-white text-xl font-bold mb-1">Façade moderne en bois</h3>
+                        <p class="text-slate-300 text-sm">Enseigne LED avec croix anim&eacute;e</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 2 -->
+                <div
+                    class="portfolio-card group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/5] cursor-pointer reveal reveal-up delay-1">
+                    <img src="assets/img/WhatsApp Image 2026-02-04 at 21.19.05.jpeg"
+                        alt="Showroom Auto - Habillage" class="portfolio-img w-full h-full object-cover">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/60 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-teal-400 text-xs font-bold uppercase tracking-wider mb-2">Habillage
+                            Fa&ccedil;ade</span>
+                        <h3 class="text-white text-xl font-bold mb-1">Panneau publicitaire </h3>
+                        <p class="text-slate-300 text-sm">Rev&ecirc;tement Alucobond complet</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 3 -->
+                <div
+                    class="portfolio-card group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/5] cursor-pointer reveal reveal-up delay-2">
+                    <img src="assets/img/p.jpeg"
+                        alt="Cabinet Dentaire" class="portfolio-img w-full h-full object-cover">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/60 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-teal-400 text-xs font-bold uppercase tracking-wider mb-2">Signal&eacute;tique
+                            Int&eacute;rieure</span>
+                        <h3 class="text-white text-xl font-bold mb-1"> éclairage architectural</h3>
+                        <p class="text-slate-300 text-sm">Signal&eacute;tique compl&egrave;te int&eacute;rieure</p>
+                    </div>
+                </div>
+                <!-- Portfolio Card 4 -->
+                <div
+                    class="portfolio-card group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/5] cursor-pointer reveal reveal-up delay-3">
+                    <img src="assets/img/strada.jpeg",
+
+                        alt="Mall Center - Totem" class="portfolio-img w-full h-full object-cover">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/60 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-teal-400 text-xs font-bold uppercase tracking-wider mb-2">Totem</span>
+                        <h3 class="text-white text-xl font-bold mb-1">Café STRADA</h3>
+                        <p class="text-slate-300 text-sm">Totem lumineux double face</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center md:hidden reveal reveal-up">
+                <a href="portfolio.html"
+                    class="inline-block text-navy-900 font-bold border-b-2 border-navy-900 pb-1">Voir tout le
+                    portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA (ENHANCED) ===== -->
+    <section class="py-32 bg-navy-900 relative overflow-hidden">
+        <!-- Particle container -->
+        <div id="cta-particles" class="absolute inset-0 z-0"></div>
+
+        <!-- Ambient glow -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-teal-500/10 rounded-full blur-[150px]">
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-3xl mx-auto">
+                <div class="reveal reveal-scale delay-0 mb-6">
+                    <div
+                        class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-teal-500/10 border border-teal-500/20 mb-8">
+                        <i class="ph ph-chat-circle-dots text-4xl text-teal-400"></i>
+                    </div>
+                </div>
+                <h2 class="reveal reveal-up delay-1 text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Pr&ecirc;t &agrave; transformer<br>
+                    <span class="text-gradient-animated">votre image ?</span>
+                </h2>
+                <p class="reveal reveal-up delay-2 text-xl text-slate-300 mb-12 max-w-xl mx-auto leading-relaxed">
+                    Discutez de votre projet avec notre &eacute;quipe technique. Devis gratuit et sans engagement.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-5 reveal reveal-up delay-3">
+                    <a href="contact.html"
+                        class="magnetic-btn px-10 py-5 bg-teal-500 hover:bg-teal-400 text-navy-900 text-lg font-bold rounded-xl shadow-lg shadow-teal-500/30 transition-all duration-300">
+                        Demander un devis
+                    </a>
+                    <a href="https://wa.me/212699355710"
+                        class="magnetic-btn px-10 py-5 bg-transparent border-2 border-white/20 text-white text-lg font-bold rounded-xl hover:bg-white hover:text-navy-900 transition-all duration-300 flex items-center justify-center gap-3">
+                        <i class="ph ph-whatsapp-logo text-2xl"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER (ENHANCED) ===== -->
+    <footer class="bg-slate-950 text-slate-400 pt-20 pb-8 border-t border-slate-800/50 text-sm">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div class="reveal reveal-up">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <img src="assets/img/logo-icon.svg" alt="Jayscom Logo"
+                        class="h-10 w-auto object-contain brightness-0 invert opacity-90">
+                </a>
+                <p class="mb-6 leading-relaxed">Votre partenaire expert en communication visuelle et signal&eacute;tique
+                    &agrave; Casablanca. Qualit&eacute; et cr&eacute;ativit&eacute; garanties.</p>
+                <div class="flex gap-3">
+                    <a href="https://www.facebook.com/ProPub.YOrk/"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all"><i
+                            class="ph ph-facebook-logo text-xl"></i></a>
+                    <a href="#"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all"><i
+                            class="ph ph-instagram-logo text-xl"></i></a>
+                    <a href="https://wa.me/212699355710"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all"><i
+                            class="ph ph-whatsapp-logo text-xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="reveal reveal-up delay-1">
+                <h4 class="text-white font-bold text-lg mb-6">Nos Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Enseignes
+                            Lumineuses</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Habillage
+                            Fa&ccedil;ade</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Lettrage 3D</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Impression
+                            Num&eacute;rique</a></li>
+                    <li><a href="services.html"
+                            class="footer-link hover:text-teal-400 transition">Signal&eacute;tique</a></li>
+                </ul>
+            </div>
+
+            <!-- Links -->
+            <div class="reveal reveal-up delay-2">
+                <h4 class="text-white font-bold text-lg mb-6">Liens Rapides</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="footer-link hover:text-teal-400 transition">Accueil</a></li>
+                    <li><a href="portfolio.html"
+                            class="footer-link hover:text-teal-400 transition">R&eacute;alisations</a></li>
+                    <li><a href="about.html" class="footer-link hover:text-teal-400 transition">&Agrave; propos de
+                            nous</a></li>
+                    <li><a href="contact.html" class="footer-link hover:text-teal-400 transition">Contact &amp;
+                            Devis</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="reveal reveal-up delay-3">
+                <h4 class="text-white font-bold text-lg mb-6">Contact</h4>
+                <ul class="space-y-5">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-map-pin text-teal-400 text-lg"></i>
+                        </div>
+                        <span class="pt-2">Casablanca, Maroc</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-phone text-teal-400 text-lg"></i>
+                        </div>
+                        <a href="tel:0699355710" class="hover:text-white transition pt-2">0699 35 57 10</a>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-envelope-simple text-teal-400 text-lg"></i>
+                        </div>
+                        <a href="mailto:Jayscom22@gmail.com"
+                            class="hover:text-white transition pt-2">Jayscom22@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-slate-800/50 pt-8">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600">&copy; <span id="current-year">2026</span> Jayscom. Tous droits
+                    r&eacute;serv&eacute;s.</p>
+                <p class="text-slate-700 text-xs">Fabriqu&eacute; avec passion &agrave; Casablanca</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox fixed inset-0 z-[70] bg-black/90 flex items-center justify-center p-4">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl hover:text-teal-500 transition"><i
+                class="ph ph-x"></i></button>
+        <div class="max-w-4xl w-full max-h-screen relative flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="" class="max-h-[85vh] object-contain rounded-md shadow-2xl">
+            <p id="lightbox-caption" class="text-white mt-4 font-medium text-lg text-center"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

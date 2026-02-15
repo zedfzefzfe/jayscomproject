@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail Service - Jayscom</title>
+    <meta name="description" content="Détails de nos services de signalétique et publicité.">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#1e293b', 900: '#0f172a' },
+                        teal: { 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488' },
+                        brand: { red: '#dc2626' }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-slate-600 bg-white flex flex-col min-h-screen">
+
+    <!-- Header (Similar to index.html) -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+        <div id="main-nav"
+            class="container mx-auto px-6 flex justify-between items-center text-navy-900 py-3 transition-all duration-300">
+            <a href="index.html" class="flex items-center gap-0 group logo-reveal-group">
+                <img src="assets/img/logo-icon.svg" alt="Jayscom Icon" class="h-16 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col logo-text">
+                    <span class="font-bold text-2xl tracking-tight leading-none text-navy-900 font-serif">JAYS
+                        COM</span>
+                    <span
+                        class="text-[0.65rem] uppercase tracking-[0.2em] text-teal-600 font-semibold leading-none mt-1">Solutions
+                        Visuelles</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium">
+                <a href="index.html" class="hover:text-teal-600 transition">Accueil</a>
+                <a href="portfolio.html" class="hover:text-teal-600 transition">Réalisations</a>
+                <a href="contact.html" class="hover:text-teal-600 transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-[#0d9488] rounded-lg hover:bg-teal-500 transition shadow-lg">Demander
+                    un devis</a>
+                <button id="menu-btn" class="lg:hidden text-2xl text-navy-900"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-[60] transform translate-x-full lg:hidden flex flex-col p-6">
+        <div class="flex justify-between items-center mb-10">
+            <span class="font-bold text-xl text-navy-900">Menu</span>
+            <button id="close-menu-btn" class="text-2xl text-slate-400 hover:text-navy-900"><i
+                    class="ph ph-x"></i></button>
+        </div>
+        <nav class="flex flex-col gap-6 text-lg font-medium text-slate-700">
+            <a href="index.html" class="hover:text-teal-600">Accueil</a>
+            <a href="portfolio.html" class="hover:text-teal-600">Réalisations</a>
+            <a href="contact.html" class="hover:text-teal-600">Contact</a>
+        </nav>
+    </div>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <div class="relative h-[60vh] min-h-[500px] overflow-hidden bg-navy-900 flex items-center">
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/80 to-navy-900/60 z-10"></div>
+                <!-- Dynamic Image -->
+                <img id="detail-hero-img" src="" alt=""
+                    class="w-full h-full object-cover animate-subtle-zoom opacity-60">
+            </div>
+
+            <div class="container mx-auto px-6 relative z-20 pt-20">
+                <a href="index.html"
+                    class="inline-flex items-center gap-2 text-teal-400 mb-6 hover:text-teal-300 transition reveal reveal-up">
+                    <i class="ph ph-arrow-left"></i> Retour 
+                </a>
+                <div class="max-w-3xl">
+                    <h1 id="detail-title"
+                        class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight reveal reveal-up delay-1">
+                        <!-- Title here -->
+                    </h1>
+                    <p id="detail-short-desc"
+                        class="text-xl text-slate-300 leading-relaxed reveal reveal-up delay-2 border-l-4 border-teal-500 pl-6">
+                        <!-- Short Description here -->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16">
+
+                    <!-- Main Content -->
+                    <div class="lg:w-2/3">
+                        <div class="reveal reveal-up">
+                            <h2 class="text-3xl font-bold text-navy-900 mb-6">Description Détaillée</h2>
+                            <p id="detail-full-desc" class="text-lg text-slate-600 leading-relaxed mb-10">
+                                <!-- Full Description here -->
+                            </p>
+
+                            <!-- Gallery Section -->
+                            <h3 class="text-2xl font-bold text-navy-900 mb-6">Nos Réalisations</h3>
+                            <div id="detail-gallery-grid" class="grid grid-cols-2 lg:grid-cols-2 gap-4 mb-12">
+                                <!-- Gallery Images will be injected here -->
+                            </div>
+                        </div>
+
+                        <div class="reveal reveal-up delay-1">
+                            <h3 class="text-2xl font-bold text-navy-900 mb-6">Caractéristiques Clés</h3>
+                            <div id="detail-features" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Features here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-28 space-y-8">
+                            <div class="bg-navy-900 rounded-2xl p-8 text-white reveal reveal-left delay-2">
+                                <h3 class="text-2xl font-bold mb-4">Intéressé ?</h3>
+                                <p class="text-slate-300 mb-8">
+                                    Notre équipe est prête à concrétiser votre projet. Demandez un devis gratuit.
+                                </p>
+                                <a href="contact.html"
+                                    class="flex items-center justify-center w-full px-6 py-4 bg-teal-500 hover:bg-teal-400 text-navy-900 font-bold rounded-xl transition shadow-lg shadow-teal-500/20">
+                                    Demander un devis
+                                </a>
+                                <a href="https://wa.me/212699355710"
+                                    class="flex items-center justify-center w-full px-6 py-4 mt-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition border border-white/10">
+                                    <i class="ph ph-whatsapp-logo text-xl mr-2"></i> WhatsApp
+                                </a>
+                            </div>
+
+                            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 reveal reveal-left delay-3">
+                                <h4 class="font-bold text-navy-900 mb-4">Pourquoi nous choisir ?</h4>
+                                <ul class="space-y-3 text-slate-600">
+                                    <li class="flex items-center gap-3">
+                                        <i class="ph ph-check-circle text-teal-600"></i> Atelier de fabrication interne
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <i class="ph ph-check-circle text-teal-600"></i> Pose et installation incluses
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <i class="ph ph-check-circle text-teal-600"></i> Garantie sur tous nos produits
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Services Grid (Simplified) -->
+        <section class="bg-slate-50 py-20 border-t border-slate-200">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-navy-900 mb-10 text-center reveal reveal-up">Autres services</h2>
+                <div id="other-services-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Other services injected here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="bg-slate-950 text-slate-400 pt-20 pb-8 border-t border-slate-800/50 text-sm">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div class="reveal reveal-up">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <img src="assets/img/logo-icon.svg" alt="Jayscom Logo"
+                        class="h-10 w-auto object-contain brightness-0 invert opacity-90">
+                </a>
+                <p class="mb-6 leading-relaxed">Votre partenaire expert en communication visuelle et signal&eacute;tique
+                    &agrave; Casablanca. Qualit&eacute; et cr&eacute;ativit&eacute; garanties.</p>
+                <div class="flex gap-3">
+                    <a href="https://www.facebook.com/ProPub.YOrk/"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all"><i
+                            class="ph ph-facebook-logo text-xl"></i></a>
+                    <a href="#"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all"><i
+                            class="ph ph-instagram-logo text-xl"></i></a>
+                    <a href="https://wa.me/212699355710"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all"><i
+                            class="ph ph-whatsapp-logo text-xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="reveal reveal-up delay-1">
+                <h4 class="text-white font-bold text-lg mb-6">Nos Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Enseignes
+                            Lumineuses</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Habillage
+                            Fa&ccedil;ade</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Lettrage 3D</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Impression
+                            Num&eacute;rique</a></li>
+                    <li><a href="services.html"
+                            class="footer-link hover:text-teal-400 transition">Signal&eacute;tique</a></li>
+                </ul>
+            </div>
+
+            <!-- Links -->
+            <div class="reveal reveal-up delay-2">
+                <h4 class="text-white font-bold text-lg mb-6">Liens Rapides</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="footer-link hover:text-teal-400 transition">Accueil</a></li>
+                    <li><a href="portfolio.html"
+                            class="footer-link hover:text-teal-400 transition">R&eacute;alisations</a></li>
+                    <li><a href="about.html" class="footer-link hover:text-teal-400 transition">&Agrave; propos de
+                            nous</a></li>
+                    <li><a href="contact.html" class="footer-link hover:text-teal-400 transition">Contact &amp;
+                            Devis</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="reveal reveal-up delay-3">
+                <h4 class="text-white font-bold text-lg mb-6">Contact</h4>
+                <ul class="space-y-5">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-map-pin text-teal-400 text-lg"></i>
+                        </div>
+                        <span class="pt-2">Casablanca, Maroc</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-phone text-teal-400 text-lg"></i>
+                        </div>
+                        <a href="tel:0699355710" class="hover:text-white transition pt-2">0699 35 57 10</a>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-envelope-simple text-teal-400 text-lg"></i>
+                        </div>
+                        <a href="mailto:Jayscom22@gmail.com"
+                            class="hover:text-white transition pt-2">Jayscom22@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-slate-800/50 pt-8">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600">&copy; <span id="current-year">2026</span> Jayscom. Tous droits
+                    r&eacute;serv&eacute;s.</p>
+                <p class="text-slate-700 text-xs">Fabriqu&eacute; avec passion &agrave; Casablanca</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/services-data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const serviceId = params.get('id');
+
+            // Find service in global data
+            const service = window.servicesData.find(s => s.id === serviceId);
+
+            if (!service) {
+                // Redirect if not found or empty
+                window.location.href = 'services.html';
+                return;
+            }
+
+            // Populate page
+            document.title = `${service.title} - Jayscom`;
+            document.getElementById('detail-hero-img').src = service.image;
+            document.getElementById('detail-hero-img').alt = service.title;
+            document.getElementById('detail-title').textContent = service.title;
+            document.getElementById('detail-short-desc').textContent = service.shortDescription;
+            document.getElementById('detail-full-desc').textContent = service.fullDescription;
+
+            // Gallery Images
+            const galleryContainer = document.getElementById('detail-gallery-grid');
+            if (galleryContainer && service.gallery) {
+                service.gallery.forEach((imgUrl, index) => {
+                    // Make the first image span full width (optional, or just simple grid)
+                    // Let's do a simple responsive grid where maybe the first one is large if needed, 
+                    // otherwise just a grid of 6.
+
+                    const imgWrapper = document.createElement('div');
+                    // Add some variety: First 2 items large? Or just uniform.
+                    // Let's do a nice uniform grid with hover effects.
+                    imgWrapper.className = 'rounded-xl overflow-hidden shadow-lg aspect-square relative group bg-slate-100';
+
+                    imgWrapper.innerHTML = `
+                        <div class="absolute inset-0 bg-navy-900/0 group-hover:bg-navy-900/20 transition duration-500 z-10"></div>
+                        <img src="${imgUrl}" alt="${service.title} - ${index + 1}" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 cursor-pointer lightbox-trigger">
+                    `;
+                    galleryContainer.appendChild(imgWrapper);
+                });
+            }
+
+            // Features
+            const featuresContainer = document.getElementById('detail-features');
+            service.features.forEach(feature => {
+                const featureEl = document.createElement('div');
+                featureEl.className = 'flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 hover:shadow-md transition';
+                featureEl.innerHTML = `
+                    <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-600 flex items-center justify-center flex-shrink-0">
+                        <i class="ph ${service.icon} text-xl"></i>
+                    </div>
+                    <span class="text-navy-900 font-medium pt-2">${feature}</span>
+                `;
+                featuresContainer.appendChild(featureEl);
+            });
+
+            // Other Services (Exclude current)
+            const otherServicesContainer = document.getElementById('other-services-grid');
+            const otherServices = window.servicesData.filter(s => s.id !== serviceId).slice(0, 3);
+
+            otherServices.forEach((other, idx) => {
+                const card = document.createElement('a');
+                card.href = `service-detail.html?id=${other.id}`;
+                card.className = 'group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 reveal reveal-up';
+                card.style.transitionDelay = `${idx * 100}ms`;
+                card.innerHTML = `
+                  <div class="h-48 overflow-hidden relative">
+                    <img src="${other.image}" alt="${other.title}" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-navy-900/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="px-4 py-2 bg-white/20 backdrop-blur-md rounded-full text-white text-sm font-bold">Voir le service</span>
+                    </div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="font-bold text-navy-900 text-lg group-hover:text-teal-600 transition">${other.title}</h3>
+                  </div>
+                `;
+                otherServicesContainer.appendChild(card);
+            });
+
+            // Trigger reveals for injected content if needed
+            // The observer in script.js runs on DOMContentLoaded, so dynamic content might need manual observation if added late.
+            // But since this runs synchronously after load, it might miss the observer start.
+            // Best to trigger observer again or ensure elements have 'reveal' class before script.js runs.
+            // Actually, script.js runs at the end of body. DOMContentLoaded fires after script.js execution setup.
+            // So we might need to manually observe new elements if the observer already ran.
+            // Simpler hack: Add 'visible' class manually if observer missed it, or just rely on script.js handles.
+
+            // Re-run observer on newly added elements
+            if (window.IntersectionObserver) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('#other-services-grid .reveal').forEach(el => observer.observe(el));
+            }
+        });
+    </script>
+</body>
+
+</html>

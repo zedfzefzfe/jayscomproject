@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nos Réalisations | Jayscom Casablanca</title>
+    <meta name="description"
+        content="Découvrez nos dernières réalisations d'enseignes, habillage de façade et signalétique pour nos clients à Casablanca et partout au Maroc.">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#1e293b', 900: '#0f172a' },
+                        teal: { 500: '#14b8a6', 600: '#0d9488' },
+                        brand: { red: '#dc2626' }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-slate-600 bg-white flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent flex flex-col">
+        <div id="main-nav"
+            class="container mx-auto px-6 flex justify-between items-center text-navy-900 py-5 transition-all duration-300">
+            <a href="index.html" class="flex items-center gap-0 group logo-reveal-group">
+                <img src="assets/img/logo-icon.svg" alt="Jayscom Icon" class="h-16 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col logo-text">
+                    <span class="font-bold text-2xl tracking-tight leading-none text-white font-serif">JAYS
+                        COM</span>
+                    <span
+                        class="text-[0.65rem] uppercase tracking-[0.2em] text-teal-400 font-semibold leading-none mt-1">Solutions
+                        Visuelles</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-white">
+                <a href="index.html" class="hover:text-teal-400 transition">Accueil</a>
+                <a href="portfolio.html" class="text-teal-400">Réalisations</a>
+                <a href="contact.html" class="hover:text-teal-400 transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-[#0d9488] rounded-lg hover:bg-teal-500 hover:text-white transition shadow-lg hover:shadow-teal-400/30">
+                    Demander un devis
+                </a>
+                <button id="menu-btn" class="lg:hidden text-2xl text-white">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-[60] transform translate-x-full lg:hidden flex flex-col p-6">
+        <div class="flex justify-between items-center mb-10">
+            <span class="font-bold text-xl text-navy-900">Menu</span>
+            <button id="close-menu-btn" class="text-2xl text-slate-400 hover:text-navy-900"><i
+                    class="ph ph-x"></i></button>
+        </div>
+        <nav class="flex flex-col gap-6 text-lg font-medium text-slate-700">
+            <a href="index.html" class="hover:text-teal-600">Accueil</a>
+            <a href="services.html" class="hover:text-teal-600">Services</a>
+            <a href="portfolio.html" class="text-teal-600">Réalisations</a>
+            <a href="contact.html" class="hover:text-teal-600">Contact</a>
+        </nav>
+    </div>
+
+    <main class="flex-grow">
+        <!-- Premium Hero Section -->
+        <section class="relative overflow-hidden bg-navy-900 text-white flex flex-col justify-center pt-20 pb-6">
+            <!-- Layered Animated Backgrounds -->
+            <div class="absolute inset-0 z-0">
+                <!-- Mesh Gradient Base -->
+                <div class="absolute inset-0 bg-gradient-to-br from-navy-900 via-slate-900 to-navy-800"></div>
+
+                <!-- Animated Grid Pattern -->
+                <div class="absolute inset-0 opacity-10" style="background-image: 
+                    linear-gradient(rgba(20,184,166,0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(20,184,166,0.1) 1px, transparent 1px);
+                    background-size: 100px 100px;
+                    animation: gridMove 20s linear infinite;">
+                </div>
+
+                <!-- Teal Glow Orbs -->
+                <div class="absolute top-20 right-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl float-slow"></div>
+                <div class="absolute bottom-20 left-1/4 w-80 h-80 bg-teal-400/15 rounded-full blur-3xl float-medium">
+                </div>
+
+                <!-- Vignette -->
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-navy-900/60"></div>
+            </div>
+
+            <!-- Floating Geometric Shapes -->
+            <div class="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
+                <!-- Square 1 -->
+                <div
+                    class="absolute top-32 left-[10%] w-20 h-20 border-2 border-teal-500/20 rounded-lg rotate-12 float-slow">
+                </div>
+
+                <!-- Circle 1 -->
+                <div
+                    class="absolute top-40 right-[15%] w-16 h-16 border-2 border-teal-400/15 rounded-full float-medium">
+                </div>
+
+                <!-- Triangle (using border trick) -->
+                <div class="absolute bottom-40 left-[20%] w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[50px] border-b-teal-500/10 float-slow"
+                    style="animation-delay: 1s;"></div>
+
+                <!-- Square 2 -->
+                <div class="absolute bottom-32 right-[25%] w-24 h-24 border border-teal-500/10 rounded-2xl rotate-45 float-medium"
+                    style="animation-delay: 2s;"></div>
+
+                <!-- Small Particles -->
+                <div class="absolute top-1/4 left-1/3 w-2 h-2 bg-teal-400/40 rounded-full glow-pulse"></div>
+                <div class="absolute top-1/3 right-1/4 w-3 h-3 bg-teal-500/30 rounded-full glow-pulse"
+                    style="animation-delay: 0.5s;"></div>
+                <div class="absolute bottom-1/4 left-1/4 w-2 h-2 bg-teal-400/40 rounded-full glow-pulse"
+                    style="animation-delay: 1.5s;"></div>
+                <div class="absolute bottom-1/3 right-1/3 w-3 h-3 bg-teal-500/30 rounded-full glow-pulse"
+                    style="animation-delay: 1s;"></div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="container mx-auto px-6 relative z-10 pt-32 pb-8">
+                <div class="max-w-4xl mx-auto text-center">
+
+                    <!-- Premium Badge -->
+                    <div
+                        class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border-2 border-teal-500/30 bg-teal-500/10 backdrop-blur-md mb-8 relative">
+                        <!-- Ping Animation -->
+                        <div class="relative flex h-3 w-3">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                            <span
+                                class="relative inline-flex rounded-full h-3 w-3 bg-teal-500 shadow-lg shadow-teal-500/50"></span>
+                        </div>
+                        <span class="text-teal-400 font-black tracking-[0.25em] uppercase text-xs">Portfolio</span>
+                        <div class="w-16 h-[1px] bg-gradient-to-r from-teal-500/60 to-transparent"></div>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="text-5xl lg:text-7xl font-black leading-[1.1] mb-6 relative reveal reveal-up">
+                        <span class="relative inline-block">
+                            Nos
+                            <div
+                                class="absolute -bottom-2 left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-teal-500/40 to-transparent rounded-full">
+                            </div>
+                        </span>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-200 to-teal-400 animate-gradient-text drop-shadow-[0_0_30px_rgba(20,184,166,0.3)]">
+                            Réalisations
+                        </span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p
+                        class="text-lg lg:text-xl text-slate-300 font-light mb-6 max-w-3xl mx-auto leading-relaxed reveal reveal-up delay-1">
+                        Découvrez la <span class="text-teal-400 font-semibold">qualité de nos fabrications</span> et
+                        installations à travers une sélection de nos <span class="text-white font-semibold">projets
+                            récents</span> réalisés avec passion.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+                        <a href="#portfolio-grid"
+                            class="group px-10 py-4 bg-gradient-to-r from-teal-500 to-teal-600 text-navy-900 font-black text-lg rounded-2xl hover:from-teal-400 hover:to-teal-500 transition-all transform hover:-translate-y-1 shadow-xl shadow-teal-500/30 hover:shadow-2xl hover:shadow-teal-400/40 inline-flex items-center gap-3">
+                            <i class="ph-fill ph-images text-xl"></i>
+                            Voir la galerie
+                            <i class="ph-bold ph-arrow-down group-hover:translate-y-1 transition-transform"></i>
+                        </a>
+                        <a href="contact.html"
+                            class="group px-10 py-4 border-2 border-teal-500/50 text-white font-bold text-lg rounded-2xl hover:bg-teal-500/10 hover:border-teal-400 transition-all inline-flex items-center gap-3 backdrop-blur-sm">
+                            <i class="ph-fill ph-chat-circle-dots"></i>
+                            Devis gratuit
+                            <i class="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap items-center justify-center gap-8 reveal reveal-up delay-2">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center backdrop-blur-sm">
+                                <i class="ph-fill ph-shield-check text-teal-400 text-2xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-white font-bold text-sm">100%</div>
+                                <div class="text-slate-400 text-xs uppercase tracking-wider">Qualité</div>
+                            </div>
+                        </div>
+
+                        <div class="hidden sm:block w-[1px] h-8 bg-slate-700"></div>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center backdrop-blur-sm">
+                                <i class="ph-fill ph-medal text-teal-400 text-2xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-white font-bold text-sm">15+ ans</div>
+                                <div class="text-slate-400 text-xs uppercase tracking-wider">Expérience</div>
+                            </div>
+                        </div>
+
+                        <div class="hidden sm:block w-[1px] h-8 bg-slate-700"></div>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center backdrop-blur-sm">
+                                <i class="ph-fill ph-users-three text-teal-400 text-2xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-white font-bold text-sm">500+</div>
+                                <div class="text-slate-400 text-xs uppercase tracking-wider">Clients</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Stats Bar -->
+            <div class="relative z-20 w-full border-t border-white/10 bg-navy-900/80 backdrop-blur-xl">
+                <div class="container mx-auto px-6 py-6">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center text-center">
+                        <div>
+                            <div
+                                class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500 mb-1">
+                                12+</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Projets visibles
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500 mb-1">
+                                6</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Catégories</div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500 mb-1">
+                                100%</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Satisfaction
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 justify-center">
+                                <i class="ph-fill ph-star text-teal-400 text-xl"></i>
+                                <i class="ph-fill ph-star text-teal-400 text-xl"></i>
+                                <i class="ph-fill ph-star text-teal-400 text-xl"></i>
+                                <i class="ph-fill ph-star text-teal-400 text-xl"></i>
+                                <i class="ph-fill ph-star text-teal-400 text-xl"></i>
+                            </div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1">Avis clients
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="py-12 bg-white border-b border-slate-100 shadow-sm/50">
+            <div class="container mx-auto px-6 overflow-x-auto pb-4 md:pb-0">
+                <div class="flex md:flex-wrap md:justify-center gap-3 min-w-max md:min-w-0">
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition bg-teal-600 text-white shadow-md hover:shadow-lg"
+                        data-filter="all">Tous</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition bg-gray-100 text-slate-600 hover:bg-gray-200"
+                        data-filter="enseigne">Enseignes Lumineuses</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition bg-gray-100 text-slate-600 hover:bg-gray-200"
+                        data-filter="3d">Lettrage 3D</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition bg-gray-100 text-slate-600 hover:bg-gray-200"
+                        data-filter="facade">Habillage Façade</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition bg-gray-100 text-slate-600 hover:bg-gray-200"
+                        data-filter="print">Impression</button>
+                    <button
+                        class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition bg-gray-100 text-slate-600 hover:bg-gray-200"
+                        data-filter="signaletique">Signalétique</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="py-12 lg:py-20 bg-slate-50 min-h-[600px]">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="portfolio-grid">
+
+                    <!-- Item 1 -->
+                    <div class="portfolio-item fade-in-up delay-1 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/p.jpeg"
+                            alt="Enseigne Pharmacie"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/p.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Pharmacie Moderne - Enseigne Lumineuse">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Pharmacie Moderne</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Enseigne Lumineuse</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="facade">
+                        <img src="assets/img/dar.jpeg"
+                            alt="Showroom Auto"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/dar.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Showroom Auto - Habillage Alucobond">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Showroom Auto</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Habillage Alucobond</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="3d">
+                        <img src="assets/img/az.jpeg"
+                            alt="Logo Inox"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/az.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Société Immobilière - Lettres Inox">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Société Immobilière</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Lettrage 3D Inox</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="portfolio-item fade-in-up delay-4 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="print">
+                        <img src="assets/img/op.jpeg"
+                            alt="Vitrine"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/op.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Magasin de Mode - Adhésif Vitrine">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Magasin de Mode</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Impression One-Way</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="portfolio-item fade-in-up delay-1 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="signaletique">
+                        <img src="assets/img/WhatsApp Image 2026-02-14 at 00.38.40.jpeg"
+                            alt="Totem"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/WhatsApp Image 2026-02-14 at 00.38.40.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Clinique Ryad - Totem Directionnel">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Clinique Ryad</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Signalétique Extérieure</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/nu.jpeg"
+                            alt="Caisson"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/nu.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Restaurant IT - Caisson Lumineux">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Restaurant IT</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Enseigne Drapeau</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="3d">
+                        <img src="assets/img/n.jpeg"
+                            alt="Lettres PVC"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/n.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="StartUp Office - Logo Intérieur">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                StartUp Office</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Logo 3D PVC</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="portfolio-item fade-in-up delay-4 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="facade">
+                        <img src="assets/img/lib.jpeg"
+                            alt="Facade Cafe"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/lib.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Café Gourmet - Habillage Bois/Alu">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Café Gourmet</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Habillage Bois/Alu</p>
+                        </a>
+                    </div>
+
+
+                    <!-- Item 9 -->
+                    <div class="portfolio-item fade-in-up delay-1 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="print">
+                        <img src="assets/img/casa.jpeg"
+                            alt="Bache XXL"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/casa.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Festival Musique - Bâche Géante">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Festival Musique</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Impression Grand Format</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 10 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="signaletique">
+                        <img src="assets/img/sup.jpeg"
+                            alt="Plaques Porte"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/sup.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Bureau Avocats - Signalétique Intérieure">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Bureau Avocats</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Plaques Gravées</p>
+                        </a>
+                    </div>
+                    <!-- Item 10 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="signaletique">
+                        <img src="assets/img/mo.jpeg"
+                            alt="Plaques Porte"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/mo.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Bureau Avocats - Signalétique Intérieure">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Bureau Avocats</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Plaques Gravées</p>
+                        </a>
+                    </div>
+                    <!-- Item 10 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="signaletique">
+                        <img src="assets/img/drf.jpeg"
+                            alt="Plaques Porte"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/drf.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Bureau Avocats - Signalétique Intérieure">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Bureau Avocats</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Plaques Gravées</p>
+                        </a>
+                    </div>
+                    <!-- Item 10 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="signaletique">
+                        <img src="assets/img/beauty.jpeg"
+                            alt="Plaques Porte"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/beauty.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Bureau Avocats - Signalétique Intérieure">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Bureau Avocats</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Plaques Gravées</p>
+                        </a>
+                    </div>
+                    <!-- Item 10 -->
+                    <div class="portfolio-item fade-in-up delay-2 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="signaletique">
+                        <img src="assets/img/ang.jpeg"
+                            alt="Plaques Porte"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/ang.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Bureau Avocats - Signalétique Intérieure">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Bureau Avocats</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Plaques Gravées</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 11 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/strada.jpeg"
+                            alt="Neon Bar"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/strada.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Lounge Bar - Néon Flex">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Lounge Bar</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Décoration Néon</p>
+                        </a>
+                    </div>
+                    <!-- Item 11 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/fr.jpeg"
+                            alt="Neon Bar"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/fr.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Lounge Bar - Néon Flex">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Lounge Bar</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Décoration Néon</p>
+                        </a>
+                    </div>
+                    <!-- Item 11 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/sahel.jpeg"
+                            alt="Neon Bar"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/sahel.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Lounge Bar - Néon Flex">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Lounge Bar</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Décoration Néon</p>
+                        </a>
+                    </div>
+                    <!-- Item 11 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/sah.jpeg"
+                            alt="Neon Bar"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/sah.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Lounge Bar - Néon Flex">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Lounge Bar</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Décoration Néon</p>
+                        </a>
+                    </div>
+                    <!-- Item 11 -->
+                    <div class="portfolio-item fade-in-up delay-3 group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="enseigne">
+                        <img src="assets/img/tob.jpeg"
+                            alt="Neon Bar"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/tob.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Lounge Bar - Néon Flex">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Lounge Bar</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Décoration Néon</p>
+                        </a>
+                    </div>
+
+                    <!-- Item 12 -->
+                    <div class="portfolio-item group relative rounded-xl overflow-hidden shadow-md cursor-pointer aspect-[4/5] bg-white transition-all duration-500"
+                        data-category="facade">
+                        <img src="assets/img/to.jpeg"
+                            alt="Ecole"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <a href="assets/img/to.jpeg"
+                            class="absolute inset-0 bg-navy-900/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center p-6 text-center lightbox-trigger"
+                            title="Groupe Scolaire - Habillage Complet">
+                            <span
+                                class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white text-2xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition duration-500"><i
+                                    class="ph ph-magnifying-glass-plus"></i></span>
+                            <h3
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">
+                                Groupe Scolaire</h3>
+                            <p
+                                class="text-slate-300 text-sm mt-2 translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">
+                                Façade & Enseigne</p>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Strip -->
+        <section class="py-12 bg-teal-600 text-white">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h2 class="text-2xl font-bold">Un projet similaire en tête ?</h2>
+                    <p class="text-teal-100">Demandez votre devis gratuit dès aujourd'hui.</p>
+                </div>
+                <a href="contact.html"
+                    class="px-8 py-3 bg-white text-teal-600 font-bold rounded-lg shadow-lg hover:bg-navy-900 hover:text-white transition">
+                    Contactez-nous
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER (ENHANCED) ===== -->
+    <footer class="bg-slate-950 text-slate-400 pt-20 pb-8 border-t border-slate-800/50 text-sm">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div class="reveal reveal-up">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <img src="assets/img/logo-icon.svg" alt="Jayscom Logo"
+                        class="h-10 w-auto object-contain brightness-0 invert opacity-90">
+                </a>
+                <p class="mb-6 leading-relaxed">Votre partenaire expert en communication visuelle et signalétique
+                    à Casablanca. Qualité et créativité garanties.</p>
+                <div class="flex gap-3">
+                    <a href="https://www.facebook.com/ProPub.YOrk/"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all"><i
+                            class="ph ph-facebook-logo text-xl"></i></a>
+                    <a href="#"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all"><i
+                            class="ph ph-instagram-logo text-xl"></i></a>
+                    <a href="https://wa.me/212699355710"
+                        class="social-icon w-11 h-11 rounded-xl bg-slate-800/80 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all"><i
+                            class="ph ph-whatsapp-logo text-xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="reveal reveal-up delay-1">
+                <h4 class="text-white font-bold text-lg mb-6">Nos Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Enseignes
+                            Lumineuses</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Habillage
+                            Façade</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Lettrage 3D</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Impression
+                            Numérique</a></li>
+                    <li><a href="services.html" class="footer-link hover:text-teal-400 transition">Signalétique</a></li>
+                </ul>
+            </div>
+
+            <!-- Links -->
+            <div class="reveal reveal-up delay-2">
+                <h4 class="text-white font-bold text-lg mb-6">Liens Rapides</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="footer-link hover:text-teal-400 transition">Accueil</a></li>
+                    <li><a href="portfolio.html" class="footer-link hover:text-teal-400 transition">Réalisations</a>
+                    </li>
+                    <li><a href="about.html" class="footer-link hover:text-teal-400 transition">À propos de
+                            nous</a></li>
+                    <li><a href="contact.html" class="footer-link hover:text-teal-400 transition">Contact &amp;
+                            Devis</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="reveal reveal-up delay-3">
+                <h4 class="text-white font-bold text-lg mb-6">Contact</h4>
+                <ul class="space-y-5">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-map-pin text-teal-400 text-lg"></i>
+                        </div>
+                        <span class="pt-2">Casablanca, Maroc</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-phone text-teal-400 text-lg"></i>
+                        </div>
+                        <a href="tel:0699355710" class="hover:text-white transition pt-2">0699 35 57 10</a>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-envelope-simple text-teal-400 text-lg"></i>
+                        </div>
+                        <a href="mailto:Jayscom22@gmail.com"
+                            class="hover:text-white transition pt-2">Jayscom22@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-slate-800/50 pt-8">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600">&copy; <span id="current-year">2026</span> Jayscom. Tous droits
+                    réservés.</p>
+                <p class="text-slate-700 text-xs">Fabriqué avec passion à Casablanca</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox fixed inset-0 z-[70] bg-black/95 flex items-center justify-center p-4">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl hover:text-teal-500 transition"><i
+                class="ph ph-x"></i></button>
+        <div class="max-w-5xl w-full max-h-screen relative flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] object-contain rounded-sm shadow-2xl">
+            <div class="mt-4 bg-navy-900/50 backdrop-blur-md px-6 py-3 rounded-full border border-white/10">
+                <p id="lightbox-caption" class="text-white font-medium text-lg text-center"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

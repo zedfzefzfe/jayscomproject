@@ -1,0 +1,312 @@
+<!-- FAQ Section - Ultra Premium -->
+<section class="py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-slate-50 relative overflow-hidden">
+    <!-- Sophisticated Background Effects -->
+    <div
+        class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-gradient-radial from-teal-500/8 to-transparent rounded-full blur-3xl">
+    </div>
+    <div
+        class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-teal-400/6 to-transparent rounded-full blur-3xl">
+    </div>
+
+    <!-- Decorative Grid Pattern -->
+    <div class="absolute inset-0 opacity-[0.015]"
+        style="background-image: radial-gradient(circle, #0d9488 1px, transparent 1px); background-size: 50px 50px;">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Premium Section Header -->
+            <div class="text-center mb-14 reveal reveal-up">
+                <!-- Decorative Top Line -->
+                <div class="flex items-center justify-center gap-4 mb-8">
+                    <div class="h-[1px] w-12 bg-gradient-to-r from-transparent to-teal-500/40"></div>
+                    <div
+                        class="relative inline-flex items-center gap-4 px-6 py-2.5 rounded-full bg-gradient-to-r from-teal-500/10 via-white to-teal-500/10 border border-teal-500/20 shadow-lg shadow-teal-500/5">
+                        <div class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                        </div>
+                        <span class="text-teal-600 font-bold tracking-[0.3em] uppercase text-xs">Questions &
+                            Réponses</span>
+                        <div class="w-16 h-[1px] bg-gradient-to-r from-teal-500/60 via-teal-400/30 to-transparent">
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-12 bg-gradient-to-l from-transparent to-teal-500/40"></div>
+                </div>
+
+                <h2 class="text-4xl lg:text-6xl font-black text-navy-900 leading-[1.1] mb-5 tracking-tight">
+                    <span class="relative inline-block">
+                        Questions
+                        <div
+                            class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-teal-500/30 to-transparent rounded-full">
+                        </div>
+                    </span>
+                    <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600">Fréquentes</span>
+                </h2>
+                <p class="text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto font-light">
+                    Tout ce que vous devez savoir pour <span class="text-teal-600 font-medium">démarrer
+                        sereinement</span>
+                </p>
+            </div>
+
+            <!-- Premium FAQ Grid -->
+            <div class="space-y-6">
+
+                <!-- FAQ Item 1 -->
+                <details
+                    class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-1 overflow-hidden">
+                    <!-- Decorative Gradient Bar -->
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                    </div>
+
+                    <!-- Hover Glow Effect -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    </div>
+
+                    <summary
+                        class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                        <!-- Question Number Badge -->
+                        <div class="flex-shrink-0">
+                            <div class="relative">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                    <span class="text-white font-black text-lg">01</span>
+                                </div>
+                                <!-- Icon Overlay -->
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                    <i class="ph-fill ph-clock text-teal-600 text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 pt-1">
+                            <h3
+                                class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                Quel est le délai de réponse ?
+                            </h3>
+                            <p class="text-sm text-slate-500 font-medium">Rapidité & Disponibilité</p>
+                        </div>
+
+                        <div class="flex-shrink-0 pt-2">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                <i
+                                    class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                        <div class="pl-[68px] pr-4">
+                            <div
+                                class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                <p class="text-slate-700 leading-relaxed text-base">
+                                    Nous nous engageons à répondre à <strong class="text-teal-600 font-bold">toutes les
+                                        demandes sous 24h ouvrées</strong>.
+                                    Pour les demandes urgentes via WhatsApp, la réponse est <strong
+                                        class="text-navy-900">généralement instant anée</strong> pendant nos heures
+                                    d'ouverture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details
+                    class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-2 overflow-hidden">
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    </div>
+
+                    <summary
+                        class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                        <div class="flex-shrink-0">
+                            <div class="relative">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                    <span class="text-white font-black text-lg">02</span>
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                    <i class="ph-fill ph-check-circle text-teal-600 text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 pt-1">
+                            <h3
+                                class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                Le devis est-il vraiment gratuit ?
+                            </h3>
+                            <p class="text-sm text-slate-500 font-medium">Transparence & Sans Engagement</p>
+                        </div>
+
+                        <div class="flex-shrink-0 pt-2">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                <i
+                                    class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                        <div class="pl-[68px] pr-4">
+                            <div
+                                class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                <p class="text-slate-700 leading-relaxed text-base">
+                                    Oui, absolument. Le devis est <strong class="text-teal-600 font-bold">100% gratuit
+                                        et sans engagement</strong>.
+                                    Le déplacement pour la prise de mesures est également <strong
+                                        class="text-navy-900">inclus à Casablanca</strong> et dans un rayon de 30km.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details
+                    class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-3 overflow-hidden">
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    </div>
+
+                    <summary
+                        class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                        <div class="flex-shrink-0">
+                            <div class="relative">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                    <span class="text-white font-black text-lg">03</span>
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                    <i class="ph-fill ph-map-pin text-teal-600 text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 pt-1">
+                            <h3
+                                class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                Quelles zones couvrez-vous ?
+                            </h3>
+                            <p class="text-sm text-slate-500 font-medium">Couverture & Déplacements</p>
+                        </div>
+
+                        <div class="flex-shrink-0 pt-2">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                <i
+                                    class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                        <div class="pl-[68px] pr-4">
+                            <div
+                                class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                <p class="text-slate-700 leading-relaxed text-base">
+                                    Nous intervenons principalement sur <strong
+                                        class="text-teal-600 font-bold">Casablanca et toute la région du Grand
+                                        Casablanca</strong>.
+                                    Pour les projets d'envergure, nous pouvons nous déplacer <strong
+                                        class="text-navy-900">partout au Maroc</strong>. N'hésitez pas à nous consulter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details
+                    class="group relative bg-white rounded-3xl border-2 border-slate-100 hover:border-teal-500/30 shadow-lg hover:shadow-2xl transition-all duration-500 open:shadow-2xl open:shadow-teal-500/20 open:border-teal-500/50 reveal reveal-up delay-4 overflow-hidden">
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-open:opacity-100 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-teal-500/0 via-teal-500/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    </div>
+
+                    <summary
+                        class="relative flex items-start gap-5 cursor-pointer p-7 lg:p-9 list-none select-none group-open:pb-6">
+                        <div class="flex-shrink-0">
+                            <div class="relative">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all group-hover:scale-110">
+                                    <span class="text-white font-black text-lg">04</span>
+                                </div>
+                                <div
+                                    class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-white border-2 border-teal-500 flex items-center justify-center">
+                                    <i class="ph-fill ph-wrench text-teal-600 text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 pt-1">
+                            <h3
+                                class="font-bold text-navy-900 text-xl lg:text-2xl group-hover:text-teal-600 transition-colors leading-tight mb-2">
+                                Proposez-vous un service d'installation ?
+                            </h3>
+                            <p class="text-sm text-slate-500 font-medium">Service Complet & Professionnel</p>
+                        </div>
+
+                        <div class="flex-shrink-0 pt-2">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center group-open:bg-gradient-to-br group-open:from-teal-500 group-open:to-teal-600 group-open:border-teal-500 group-open:rotate-180 group-hover:scale-110 transition-all duration-500 shadow-sm">
+                                <i
+                                    class="ph-bold ph-caret-down text-slate-600 group-open:text-white transition-colors"></i>
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="relative px-7 lg:px-9 pb-7 lg:pb-9">
+                        <div class="pl-[68px] pr-4">
+                            <div
+                                class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+                                <p class="text-slate-700 leading-relaxed text-base">
+                                    Oui, nous proposons un <strong class="text-teal-600 font-bold">service complet clé
+                                        en main</strong> : conception, fabrication ET installation
+                                    par nos <strong class="text-navy-900">équipes professionnelles certifiées</strong>.
+                                    Tout est pris en charge de A à Z pour votre tranquillité.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+
+            <!-- Premium CTA -->
+            <div class="mt-14 text-center reveal reveal-up delay-5">
+                <div
+                    class="inline-block p-8 rounded-3xl bg-gradient-to-br from-navy-900 to-navy-800 shadow-2xl shadow-navy-900/30 border border-white/5">
+                    <p class="text-slate-300 mb-6 text-lg">Vous avez une autre question ?</p>
+                    <a href="#contact-form"
+                        class="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-teal-400 to-teal-500 text-navy-900 font-black text-lg rounded-2xl hover:from-teal-300 hover:to-teal-400 transition-all transform hover:-translate-y-1 shadow-xl shadow-teal-500/30 hover:shadow-2xl hover:shadow-teal-400/40">
+                        <i class="ph-fill ph-chat-circle-dots text-xl"></i>
+                        Contactez-nous maintenant
+                        <i class="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
